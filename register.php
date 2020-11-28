@@ -67,7 +67,7 @@
             if(mysqli_query($con,$sql))
             {
               
-               header("location:login.php");
+               header("location:index.php");
             }
             else
             {
