@@ -1,0 +1,370 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* HOME PAGE */
+
+#navbar
+{
+    background-color:#f8c4c4 ;
+    
+}
+#navbar img
+{
+    height: 70px !important;
+    width: auto;
+}
+#navbarcon
+{
+    font-weight: 600;
+    margin-right: 30px;
+} 
+#Fade1
+{
+    height: 600px !important;
+    width: 100%;
+} 
+#Fade1 img
+{
+    height: 500px;
+    width: 100%;
+} 
+
+/* SOCIAL MEDIA ICONS */
+
+.icons
+{
+    display: flex;
+   justify-content: center;
+   margin:  auto; 
+} 
+.icons ul li
+{
+    display: inline-block;
+    width: 100px;
+    background-color: #f7f0f0;
+    margin: auto 50px;
+    box-shadow: 3px 3px 10px #aeaeae, -4px -4px 10px rgb(224, 173, 173);
+    text-align: center;
+    line-height: auto;
+    font-size: medium;
+    color: #333333;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 25px;
+}
+.icons ul li:nth-child(1):hover
+{
+    color: #eeeeee;
+    border-radius: 50%;
+    background-color: blue;
+}
+.icons ul li:nth-child(2):hover
+{
+    color: #eeeeee;
+    border-radius: 50%;
+    background-color: #ff8000;
+}
+.icons ul li:nth-child(3):hover
+{
+    color: #eeeeee;
+    border-radius: 50%;
+    background-color: #00acee;
+}
+.icons ul li:nth-child(4):hover
+{
+    color: #eeeeee;
+    border-radius: 50%;
+    background-color: #44d17a;
+}
+.icons ul li:nth-child(5):hover
+{
+    color: #eeeeee;
+    border-radius: 50%;
+    background-color: #e25147;
+}
+
+/* contact page */
+
+.contact
+{
+    position: relative;
+    min-height: 100px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(./images/bg.jpg);
+    background-size: cover;
+} 
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h1
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.contact .content p{
+    font-weight: 300;
+    color: #ffffff;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px ;
+
+} 
+
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo  .box
+{
+    position: relative;
+    padding: 20px 0 ;
+    display: flex;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+} 
+.container .contactInfo .box  .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ffffff;
+    flex-direction: column;
+    font-weight: 300;
+}
+     
+.container .contactInfo .box .text h2
+{
+    font-weight: 500;
+    color: #ffffff;
+} 
+.contactForm
+{ 
+    width: 40%;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.contactForm h2
+{
+    font-size: 30px;
+    color: #070505;
+    font-weight: 500;
+}
+.contactForm .inputbox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputbox  input,
+.contactForm .inputbox  textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666666;
+
+}
+.contactForm  .inputbox  input:focus ~ span,
+.contactForm  .inputbox  input:valid ~ span,
+.contactForm  .inputbox  textarea:focus ~ span, 
+.contactForm  .inputbox  textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translatey(-20px); 
+}
+
+.contactForm  .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 990px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 100%;
+    }
+}
+
+/* BOOK NOW  PAGE */
+
+.containers
+{
+    background-color: #fafafa;
+    margin: 0 auto;
+    box-shadow: 10px 15px 20px rgba(31, 29, 29, 0.733);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.containers-time
+{
+    background-color: rgba(0, 0, 0, .95) ;
+    padding: 60px;
+    outline: 3px dashed #999790;
+    outline-offset: -30px;
+    text-align: center;
+}
+.heading
+{
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.heading-days
+{
+    color: #998100;
+ font-size: 30px;
+}
+.heading-phone
+{
+    font-size: 20px;
+    color: oldlace;
+}
+.containers-form
+{
+    padding: 20px 0;
+    margin:  0 auto;
+    color: rgb(26, 24, 24)
+}
+form
+{ 
+ display: grid;
+ grid-row-gap: 20px;
+}
+form p
+{
+    font-weight: 600;
+}
+.form-field
+{
+    display: flex;
+    justify-content: space-between;
+}
+input , select
+{
+    padding: 10px 15px;
+}
+  .btn
+{
+    background-color: #d3a69b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 100px;
+}
+@media (max-width: 800px)
+{
+.containers, .containers-form, .containers-time
+  {
+      width: 100%;
+  }
+}
+
+/* GALLERY */
+  
+.gallery
+{
+   -webkit-column-count: 3;
+    -moz-column-count: 3; 
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: auto;
+    column-width: auto;
+}
+.row h1
+{
+    display: block;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right:  25%;
+    font-weight: bold;
+    text-align: center;
+}
+.loginform
+{
+  background-image: linear-gradient(to right top , #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7 , #fffcdc);
+}
+.registerform
+{
+   background-image: linear-gradient(to right top, #d9a7c7, #fffcdc);
+}
+.checked
+{
+    color: rgb(212, 156, 33);
+}
+.card-img-top1
+{
+   
+   height: 300px ;
+   width: 300px;   
+}
+.card-deck
+{
+    padding: 3%;
+    max-height: 25.3%;
+    max-width: 55.5%;
+}
